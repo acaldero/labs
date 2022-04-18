@@ -7,7 +7,7 @@
      * Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
  
    **Code**
-     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
 
 
  * ### <ins>Communication and synchronization among threads</ins>
@@ -16,7 +16,7 @@
      * Programming an example of race condition between two threads.
  
    **Code**
-     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w10_cns/race.c">race.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/race.c">race.c</a>
 
    **Compile and execute**
    ```
@@ -28,7 +28,7 @@
      * Programming an example of interlocking between two threads.
  
    **Code**
-     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w10_cns/interlock.c">interlock.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/interlock.c">interlock.c</a>
 
    **Compile and execute**
    ```
@@ -43,14 +43,14 @@
      * Programming a main function that simulates one server that sequentially receive requests and treat them.
 
    **Code**
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.h">peticion.h</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">1_sequential.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.h">request.h</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.c">request.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/1_sequential.c">1_sequential.c</a>
 
    **Compile and execute**
    ```
-   gcc -Wall -g -o peticion.o -c peticion.c
-   gcc -Wall -g -o 1 1_sequential.c -lpthread peticion.o
+   gcc -Wall -g -o request.o -c request.c
+   gcc -Wall -g -o 1 1_sequential.c -lpthread request.o
    ./1
    ```
 
@@ -59,14 +59,14 @@
      * Programming a main function that simulates one server that receive requests, create a process (fork) and the child process treat each associated request.
 
    **Code**
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.h">peticion.h</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">2_fork.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.h">request.h</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.c">request.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/1_sequential.c">2_fork.c</a>
 
    **Compile and execute**
    ```
-   gcc -Wall -g -o peticion.o -c peticion.c
-   gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
+   gcc -Wall -g -o request.o -c request.c
+   gcc -Wall -g -o 2 2_fork.c -lpthread request.o
    ./2
    ```
 
@@ -75,14 +75,14 @@
      * Programming a main function that simulates one server that receive requests, create a thread and the child thread treat each associated request.
 
    **Code**
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.h">peticion.h</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">3_threads_ondemand.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.h">request.h</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.c">request.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/1_sequential.c">3_threads_ondemand.c</a>
 
    **Compile and execute**
    ```
-   gcc -Wall -g -o peticion.o -c peticion.c
-   gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread peticion.o
+   gcc -Wall -g -o request.o -c request.c
+   gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread request.o
    ./3
    ```
 
@@ -91,14 +91,14 @@
      * Programming a main function that simulates one server that create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
 
    **Code**
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.h">peticion.h</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
-    * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">4_threads_pool.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.h">request.h</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/request.c">request.c</a>
+    * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servers/1_sequential.c">4_threads_pool.c</a>
 
    **Compile and execute**
    ```
-   gcc -Wall -g -o peticion.o -c peticion.c
-   gcc -Wall -g -o 4 4_threads_pool.c -lpthread peticion.o
+   gcc -Wall -g -o request.o -c request.c
+   gcc -Wall -g -o 4 4_threads_pool.c -lpthread request.o
    ./4
    ```
 
