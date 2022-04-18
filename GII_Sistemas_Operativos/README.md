@@ -36,6 +36,18 @@
    ./interlock
    ```
 
+   **Statement**
+     * Programming an example of synchronize between main thread and the pthread_create threads.
+ 
+   **Code**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o sync_child_mnc sync_child_mnc.c -lpthread
+   ./sync_child_mnc
+   ```
+
 
    **Enunciado**
      * Programar un ejemplo de producer-consumer (buffer acotado) entre dos hilos usando semáforos.
@@ -65,24 +77,24 @@
      * Programar un ejemplo de producer-consumer (bounded buffer) entre dos hilos usando mutex + conditions.
  
    **Código**
-     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_lnc.c">p-c_lnc.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
 
    **Compilar y ejecutar**
    ```
-   gcc -Wall -g -o p-c_lnc p-c_lnc.c -lpthread
-   ./p-c_lnc
+   gcc -Wall -g -o p-c_mnc p-c_mnc.c -lpthread
+   ./p-c_mnc
    ```
 
    **Enunciado**
      * Programar un ejemplo de reader-writer entre dos hilos usando mutex + conditions.
  
    **Código**
-     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_lnc.c">r-w_lnc.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
 
    **Compilar y ejecutar**
    ```
-   gcc -Wall -g -o r-w_lnc r-w_lnc.c -lpthread
-   ./r-w_lnc
+   gcc -Wall -g -o r-w_mnc r-w_mnc.c -lpthread
+   ./r-w_mnc
    ```
 
 
