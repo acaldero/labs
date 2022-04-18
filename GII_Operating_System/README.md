@@ -2,15 +2,15 @@
 
 ## Operating Systems (2021-2022)
 
- * ### <ins>POSIX threads</ins>
-   **Statement**
-     * Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
+1. ### <ins>POSIX threads</ins>
+    **Statement**
+      * Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
  
-   **Code**
-     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
+    **Code**
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
 
 
- * ### <ins>Communication and synchronization among threads</ins>
+2. ### <ins>Communication and synchronization among threads</ins>
 
    **Statement**
      * Programming an example of race condition between two threads.
@@ -98,7 +98,7 @@
    ```
 
 
- * ### <ins>Concurrent servers</ins>
+3. ### <ins>Concurrent servers</ins>
 
    **Statement 1**
      * Programming a main function that simulates one server that sequentially receive requests and treat them.
