@@ -1,4 +1,4 @@
-## Materials  used   at ARCOS.INF.UC3M.ES under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) 
+## Materials used at ARCOS.INF.UC3M.ES under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) 
 
 ## Operating Systems (2021-2022)
 
@@ -8,6 +8,33 @@
  
    **Code**
      * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
+
+
+ * ### <ins>Communication and synchronization among threads</ins>
+
+   **Statement**
+     * Programming an example of race condition between two threads.
+ 
+   **Code**
+     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w10_cns/race.c">race.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o race race.c -lpthread
+   ./race
+   ```
+
+   **Statement**
+     * Programming an example of interlocking between two threads.
+ 
+   **Code**
+     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w10_cns/interlock.c">interlock.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o interlock interlock.c -lpthread
+   ./interlock
+   ```
 
 
  * ### <ins>Concurrent servers</ins>
@@ -20,10 +47,11 @@
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">1_sequential.c</a>
 
-   **Compile**
+   **Compile and execute**
    ```
    gcc -Wall -g -o peticion.o -c peticion.c
    gcc -Wall -g -o 1 1_sequential.c -lpthread peticion.o
+   ./1
    ```
 
 
@@ -35,10 +63,11 @@
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">2_fork.c</a>
 
-   **Compile**
+   **Compile and execute**
    ```
    gcc -Wall -g -o peticion.o -c peticion.c
    gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
+   ./2
    ```
 
 
@@ -50,10 +79,11 @@
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">3_threads_ondemand.c</a>
 
-   **Compile**
+   **Compile and execute**
    ```
    gcc -Wall -g -o peticion.o -c peticion.c
    gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread peticion.o
+   ./3
    ```
 
 
@@ -65,8 +95,10 @@
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/peticion.c">peticion.c</a>
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">4_threads_pool.c</a>
 
-   **Compile**
+   **Compile and execute**
    ```
    gcc -Wall -g -o peticion.o -c peticion.c
    gcc -Wall -g -o 4 4_threads_pool.c -lpthread peticion.o
+   ./4
    ```
+
