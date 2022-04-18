@@ -12,7 +12,7 @@
 
  * ### <ins>Concurrent servers</ins>
 
-   **Statement**
+   **Statement 1**
      * Programming a main function that simulates one server that sequentially receive requests and treat them.
 
    **Code**
@@ -21,13 +21,13 @@
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">1_sequential.c</a>
 
    **Compile**
-```
-gcc -Wall -g -o peticion.o -c peticion.c
-gcc -Wall -g -o 1 1_sequential.c -lpthread peticion.o
-```
+   ```
+   gcc -Wall -g -o peticion.o -c peticion.c
+   gcc -Wall -g -o 1 1_sequential.c -lpthread peticion.o
+   ```
 
 
-   **Statement**
+   **Statement 2**
      * Programming a main function that simulates one server that receive requests, create a process (fork) and the child process treat each associated request.
 
    **Code**
@@ -36,13 +36,13 @@ gcc -Wall -g -o 1 1_sequential.c -lpthread peticion.o
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">2_fork.c</a>
 
    **Compile**
-```
-gcc -Wall -g -o peticion.o -c peticion.c
-gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
-```
+   ```
+   gcc -Wall -g -o peticion.o -c peticion.c
+   gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
+   ```
 
 
-   **Statement**
+   **Statement 3**
      * Programming a main function that simulates one server that receive requests, create a thread and the child thread treat each associated request.
 
    **Code**
@@ -51,13 +51,13 @@ gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">3_threads_ondemand.c</a>
 
    **Compile**
-```
-gcc -Wall -g -o peticion.o -c peticion.c
-gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread peticion.o
-```
+   ```
+   gcc -Wall -g -o peticion.o -c peticion.c
+   gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread peticion.o
+   ```
 
 
-   **Statement**
+   **Statement 4**
      * Programming a main function that simulates one server that create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
 
    **Code**
@@ -66,8 +66,7 @@ gcc -Wall -g -o 3 3_threads_ondemand.c -lpthread peticion.o
     * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/w11_servers/1_sequential.c">4_threads_pool.c</a>
 
    **Compile**
-```
-gcc -Wall -g -o peticion.o -c peticion.c
-gcc -Wall -g -o 4 4_threads_pool.c -lpthread peticion.o
-```
-
+   ```
+   gcc -Wall -g -o peticion.o -c peticion.c
+   gcc -Wall -g -o 4 4_threads_pool.c -lpthread peticion.o
+   ```
