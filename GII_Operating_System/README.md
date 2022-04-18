@@ -36,6 +36,18 @@
    ./interlock
    ```
 
+   **Statement**
+     * Programming an example of producer-consumer (bounded buffer) between two threads using semaphores.
+ 
+   **Code**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_sem.c">p-c_sem.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o p-c_sem p-c_sem.c -lpthread
+   ./interlock
+   ```
+
 
  * ### <ins>Concurrent servers</ins>
 
