@@ -2,5 +2,6 @@
 
 ## Operating Systems (2021-2022)
 
- * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/README.md">POSIX threads</a>
- * <a href="https://acaldero.github.io/labs/GII_Sistemas_Operativos/README.md">Concurrent servers</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#posix-threads">POSIX threads</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#concurrent-servers">Concurrent servers</a>
+
