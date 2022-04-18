@@ -3,8 +3,7 @@
 ## Operating Systems (2021-2022)
 
 1. ### <ins>POSIX threads</ins>
-    **Statement**
-      * Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
+    **Statement**: Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
  
     **Code**
       * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
@@ -12,9 +11,8 @@
 
 2. ### <ins>Communication and synchronization among threads</ins>
 
-   **Statement**
-     * Programming an example of race condition between two threads.
- 
+   **Statement**: Programming an example of race condition between two threads.
+
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/race.c">race.c</a>
 
@@ -24,8 +22,7 @@
    ./race
    ```
 
-   **Statement**
-     * Programming an example of interlocking between two threads.
+   **Statement**: Programming an example of interlocking between two threads.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/interlock.c">interlock.c</a>
@@ -36,8 +33,7 @@
    ./interlock
    ```
 
-   **Statement**
-     * Programming an example of synchronize between main thread and the pthread_create threads.
+   **Statement**: Programming an example of synchronize between main thread and the pthread_create threads.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
@@ -49,8 +45,7 @@
    ```
 
 
-   **Statement**
-     * Programming an example of producer-consumer (bounded buffer) between two threads using semaphores.
+   **Statement**: Programming an example of producer-consumer (bounded buffer) between two threads using semaphores.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_sem.c">p-c_sem.c</a>
@@ -61,8 +56,7 @@
    ./p-c_sem
    ```
 
-   **Statement**
-     * Programming an example of reader-writer between two threads using semaphores.
+   **Statement**: Programming an example of reader-writer between two threads using semaphores.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_sem.c">r-w_sem.c</a>
@@ -73,8 +67,7 @@
    ./r-w_sem
    ```
 
-   **Statement**
-     * Programming an example of producer-consumer (bounded buffer) between two threads using mutex + conditions.
+   **Statement**: Programming an example of producer-consumer (bounded buffer) between two threads using mutex + conditions.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
@@ -85,8 +78,7 @@
    ./p-c_mnc
    ```
 
-   **Statement**
-     * Programming an example of reader-writer between two threads using mutex + conditions.
+   **Statement**: Programming an example of reader-writer between two threads using mutex + conditions.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
@@ -100,8 +92,7 @@
 
 3. ### <ins>Concurrent servers</ins>
 
-   **Statement 1**
-     * Programming a main function that simulates one server that sequentially receive requests and treat them.
+   **Statement 1**: Programming a main function that simulates one server that sequentially receive requests and treat them.
 
    **Code**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w11_servers/request.h">request.h</a>
@@ -115,9 +106,7 @@
    ./1
    ```
 
-
-   **Statement 2**
-     * Programming a main function that simulates one server that receive requests, create a process (fork) and the child process treat each associated request.
+   **Statement 2**: Programming a main function that simulates one server that receive requests, create a process (fork) and the child process treat each associated request.
 
    **Code**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w11_servers/request.h">request.h</a>
@@ -131,9 +120,7 @@
    ./2
    ```
 
-
-   **Statement 3**
-     * Programming a main function that simulates one server that receive requests, create a thread and the child thread treat each associated request.
+   **Statement 3**: Programming a main function that simulates one server that receive requests, create a thread and the child thread treat each associated request.
 
    **Code**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w11_servers/request.h">request.h</a>
@@ -147,9 +134,7 @@
    ./3
    ```
 
-
-   **Statement 4**
-     * Programming a main function that simulates one server that create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
+   **Statement 4**: Programming a main function that simulates one server that create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
 
    **Code**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w11_servers/request.h">request.h</a>
@@ -162,4 +147,3 @@
    gcc -Wall -g -o 4 4_threads_pool.c -lpthread request.o
    ./4
    ```
-
