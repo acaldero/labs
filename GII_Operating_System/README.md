@@ -45,7 +45,43 @@
    **Compile and execute**
    ```
    gcc -Wall -g -o p-c_sem p-c_sem.c -lpthread
-   ./interlock
+   ./p-c_sem
+   ```
+
+   **Statement**
+     * Programming an example of reader-writer between two threads using semaphores.
+ 
+   **Code**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_sem.c">r-w_sem.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o r-w_sem r-w_sem.c -lpthread
+   ./r-w_sem
+   ```
+
+   **Statement**
+     * Programming an example of producer-consumer (bounded buffer) between two threads using mutex + conditions.
+ 
+   **Code**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_lnc.c">p-c_lnc.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o p-c_lnc p-c_lnc.c -lpthread
+   ./p-c_lnc
+   ```
+
+   **Statement**
+     * Programming an example of reader-writer between two threads using mutex + conditions.
+ 
+   **Code**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_lnc.c">r-w_lnc.c</a>
+
+   **Compile and execute**
+   ```
+   gcc -Wall -g -o r-w_lnc r-w_lnc.c -lpthread
+   ./r-w_lnc
    ```
 
 

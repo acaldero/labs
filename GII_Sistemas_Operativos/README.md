@@ -4,7 +4,7 @@
 
  * ### <ins>POSIX threads</ins>
    **Enunciado**
-     * Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
+     * Programar una función main que crea 5 hilos que imprimen "Hello world from thread #%ld!\n" y espera a que todos los hilos terminen.
  
    **Código**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w6_hilos/ths_creatjoin.c">ths_creatjoin.c</a>
@@ -13,7 +13,7 @@
  * ### <ins>Communication and synchronization among threads</ins>
 
    **Enunciado**
-     * Programming an example of race condition between two threads.
+     * Programar un ejemplo de condición de carrera entre dos hilos.
  
    **Código**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/race.c">race.c</a>
@@ -25,7 +25,7 @@
    ```
 
    **Enunciado**
-     * Programming an example of interlocking between two threads.
+     * Programar un ejemplo de interbloqueo entre dos hilos.
  
    **Código**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/interlock.c">interlock.c</a>
@@ -37,10 +37,59 @@
    ```
 
 
+   **Enunciado**
+     * Programar un ejemplo de producer-consumer (buffer acotado) entre dos hilos usando semáforos.
+ 
+   **Código**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_sem.c">p-c_sem.c</a>
+
+   **Compilar y ejecutar**
+   ```
+   gcc -Wall -g -o p-c_sem p-c_sem.c -lpthread
+   ./p-c_sem
+   ```
+
+   **Enunciado**
+     * Programar un ejemplo de reader-writer entre dos hilos usando semáforos.
+ 
+   **Código**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_sem.c">r-w_sem.c</a>
+
+   **Compilar y ejecutar**
+   ```
+   gcc -Wall -g -o r-w_sem r-w_sem.c -lpthread
+   ./r-w_sem
+   ```
+
+   **Enunciado**
+     * Programar un ejemplo de producer-consumer (bounded buffer) entre dos hilos usando mutex + conditions.
+ 
+   **Código**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_lnc.c">p-c_lnc.c</a>
+
+   **Compilar y ejecutar**
+   ```
+   gcc -Wall -g -o p-c_lnc p-c_lnc.c -lpthread
+   ./p-c_lnc
+   ```
+
+   **Enunciado**
+     * Programar un ejemplo de reader-writer entre dos hilos usando mutex + conditions.
+ 
+   **Código**
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_lnc.c">r-w_lnc.c</a>
+
+   **Compilar y ejecutar**
+   ```
+   gcc -Wall -g -o r-w_lnc r-w_lnc.c -lpthread
+   ./r-w_lnc
+   ```
+
+
  * ### <ins>Concurrent servers</ins>
 
    **Enunciado 1**
-     * Programming a main function that simulates one server that sequentially receive requests and treat them.
+     * Programar una función main que simule un servidor que secuencialmente le llegan peticiones y las trata una a una.
 
    **Código**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servidores/peticion.h">peticion.h</a>
@@ -56,7 +105,7 @@
 
 
    **Enunciado 2**
-     * Programming a main function that simulates one server that receive requests, create a process (fork) and the child process treat each associated peticion.
+     * Programar una función main que simula un servidor que receive requests, create a process (fork) and the child process treat each associated peticion.
 
    **Código**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servidores/peticion.h">peticion.h</a>
@@ -72,7 +121,7 @@
 
 
    **Enunciado 3**
-     * Programming a main function that simulates one server that receive requests, create a thread and the child thread treat each associated peticion.
+     * Programar una función main que simula un servidor que receive requests, create a thread and the child thread treat each associated peticion.
 
    **Código**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servidores/peticion.h">peticion.h</a>
@@ -88,7 +137,7 @@
 
 
    **Enunciado 4**
-     * Programming a main function that simulates one server that create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
+     * Programar una función main que simula un servidor que create several theads that wait in a condition, receive requests, signal one of the pre-created thread and the child thread treat each associated request (then go to wait again).
 
    **Código**
     * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w11_servidores/peticion.h">peticion.h</a>
