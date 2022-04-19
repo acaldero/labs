@@ -3,18 +3,26 @@
 ## Operating Systems (2021-2022)
 
 1. ### <ins>POSIX threads</ins>
-    **Statement**: Programming a main function that creates 5 threads that prints "Hello world from thread #%ld!\n" and wait for all those threads.
+
+    **Example**: Programming a main function that creates 5 threads that prints "Hello world from thread #<thread id>!\n" and wait for all those threads.
  
     **Code**
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w6_threads/ths_creatjoin.c">ths_creatjoin.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w06_threads/ths_creatjoin.c">ths_creatjoin.c</a>
+
+    **Compile and execute**
+    ```
+    gcc -Wall -g -o ths_creatjoin ths_creatjoin.c -lpthread
+    ./ths_creatjoin
+    ```
 
 
 2. ### <ins>Communication and synchronization among threads</ins>
 
-   **Statement**: Programming an example of race condition between two threads.
+   **Example**: Programming an example of race condition between two threads.
 
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/race.c">race.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/race_solved.c">race_solved.c</a>
 
    **Compile and execute**
    ```
@@ -22,10 +30,11 @@
    ./race
    ```
 
-   **Statement**: Programming an example of interlocking between two threads.
+   **Example**: Programming an example of interlocking between two threads.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/interlock.c">interlock.c</a>
+     * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/interlock_solved.c">interlock_solved.c</a>
 
    **Compile and execute**
    ```
@@ -33,7 +42,7 @@
    ./interlock
    ```
 
-   **Statement**: Programming an example of synchronize between main thread and the pthread_create threads.
+   **Example**: Programming an example of synchronize between main thread and the pthread_create threads.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
@@ -45,7 +54,7 @@
    ```
 
 
-   **Statement**: Programming an example of producer-consumer (bounded buffer) between two threads using semaphores.
+   **Example**: Programming an example of producer-consumer (bounded buffer) between two threads using semaphores.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_sem.c">p-c_sem.c</a>
@@ -56,7 +65,7 @@
    ./p-c_sem
    ```
 
-   **Statement**: Programming an example of reader-writer between two threads using semaphores.
+   **Example**: Programming an example of reader-writer between two threads using semaphores.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_sem.c">r-w_sem.c</a>
@@ -67,7 +76,7 @@
    ./r-w_sem
    ```
 
-   **Statement**: Programming an example of producer-consumer (bounded buffer) between two threads using mutex + conditions.
+   **Example**: Programming an example of producer-consumer (bounded buffer) between two threads using mutex + conditions.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
@@ -78,7 +87,7 @@
    ./p-c_mnc
    ```
 
-   **Statement**: Programming an example of reader-writer between two threads using mutex + conditions.
+   **Example**: Programming an example of reader-writer between two threads using mutex + conditions.
  
    **Code**
      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
@@ -147,3 +156,4 @@
    gcc -Wall -g -o 4 4_threads_pool.c -lpthread request.o
    ./4
    ```
+

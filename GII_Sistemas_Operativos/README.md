@@ -9,7 +9,7 @@
       **Ejemplo**: Programar una función main que crea 5 hilos que imprimen "Hello world from thread <identificador del hilo>!\n" y espera a que todos los hilos terminen.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w6_hilos/ths_creatjoin.c">ths_creatjoin.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w06_hilos/ths_creatjoin.c">ths_creatjoin.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -25,6 +25,7 @@
  
       **Código**:
       * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/race.c">race.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/race_sol.c">race_sol.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -38,6 +39,7 @@
  
       **Código**:
       * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/interlock.c">interlock.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/interlock_sol.c">interlock_sol.c</a>
 
       **Compilar y ejecutar**:
       ```
