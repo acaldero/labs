@@ -4,7 +4,7 @@
 
 1. ### <ins>POSIX threads</ins>
 
-   1.1. ¿Qué son los hilos (threads)?
+   1.1. <ins>¿Qué son los hilos (threads)?</ins>
 
       **Ejemplo**: Programar una función main que crea 5 hilos que imprimen "Hello world from thread <identificador del hilo>!\n" y espera a que todos los hilos terminen.
  
@@ -17,9 +17,9 @@
       ./ths_creatjoin
       ```
 
-2. ### <ins>Communication and synchronization among threads</ins>
+2. ### <ins>Comunicación y sincronización entre hilos</ins>
 
-   2.1. ¿Qué pasa si (1) dos o más hilos (2) comparten una variable (3) al menos uno modifica la variable (4) y se hace de forma no atómica?
+   2.1. <ins>¿Qué pasa si (1) dos o más hilos (2) comparten una variable (3) al menos uno modifica la variable (4) y se hace de forma no atómica?</ins>
 
       **Ejemplo**: Programar un ejemplo de condición de carrera entre dos hilos.
  
@@ -32,7 +32,7 @@
       ./race
       ```
 
-   2.2. ¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?
+   2.2. <ins>¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?</ins>
 
       **Ejemplo**: Programar un ejemplo de interbloqueo entre dos hilos.
  
@@ -45,7 +45,7 @@
       ./interlock
       ```
 
-   2.3. ¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?
+   2.3. <ins>¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?</ins>
 
       **Ejemplo**: Programar un ejemplo de sincronización entre un hilo main y los hilos creados con pthread_create.
  
@@ -58,7 +58,7 @@
       ./sync_child_mnc
       ```
 
-   2.4. ¿Cómo resolver el problema de productor-consumidor usando semáforos?
+   2.4. <ins>¿Cómo resolver el problema de productor-consumidor usando semáforos?</ins>
 
       **Ejemplo**: Programar un ejemplo de productor-consumidor (buffer acotado) entre dos hilos usando semáforos.
  
@@ -71,7 +71,7 @@
       ./p-c_sem
       ```
 
-   2.5. ¿Cómo resolver el problema de lectores-escritores usando semáforos?
+   2.5. <ins>¿Cómo resolver el problema de lectores-escritores usando semáforos?</ins>
 
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando semáforos.
  
@@ -84,7 +84,7 @@
       ./r-w_sem
       ```
 
-   2.6. ¿Cómo resolver el problema de productores-consumidores usando mutex y conditions de POSIX?
+   2.6. <ins>¿Cómo resolver el problema de productores-consumidores usando mutex y conditions de POSIX?</ins>
 
       **Ejemplo**: Programar un ejemplo de productores-consumidores (bounded buffer) entre dos hilos usando mutex + conditions.
  
@@ -97,7 +97,7 @@
       ./p-c_mnc
       ```
 
-   2.7. ¿Cómo resolver el problema de lectores-escritores usando mutex y conditions de POSIX?
+   2.7. <ins>¿Cómo resolver el problema de lectores-escritores usando mutex y conditions de POSIX?</ins>
    
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando mutex + conditions.
  
@@ -113,7 +113,7 @@
 
 3. ### <ins>Servidores concurrentes</ins>
 
-   3.1. ¿Cómo sería un servidor de peticiones totalmente secuencial?
+   3.1. <ins>¿Cómo sería un servidor de peticiones totalmente secuencial?</ins>
 
       **Ejemplo**: Programar una función main que simule un servidor que secuencialmente le llegan peticiones y las trata una a una.
 
@@ -129,7 +129,7 @@
       ./1
       ```
 
-   3.2. ¿Cómo sería un servidor de peticiones totalmente paralelo con procesos pesados?
+   3.2. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos pesados?</ins>
 
       **Ejemplo**: Programar una función main que simula un servidor que le llegan peticiones, crea un proceso (fork) y el proceso hijo trata la petición asociada.
 
@@ -145,7 +145,7 @@
       ./2
       ```
 
-   3.3. ¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos?
+   3.3. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos?</ins>
 
       **Ejemplo**: Programar una función main que simula un servidor que le llegan peticiones, crea un hilo y el hilo creado trata la petición asociada.
 
@@ -161,7 +161,7 @@
       ./3
       ```
 
-   3.4. ¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos pre-creados?
+   3.4. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos pre-creados?</ins>
 
       **Ejemplo**: Programar una función main que simula un servidor que crea varios hilos que esperan en sus conditions asociadas, le llegan peticiones y para cada una manda una señal a un hilo pre-creado que se encarga de atender a dicha petición y volver a esperar en la condition al terminar.
 
@@ -176,3 +176,4 @@
       gcc -Wall -g -o 4 4_threads_pool.c -lpthread peticion.o
       ./4
       ```
+

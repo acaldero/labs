@@ -9,6 +9,6 @@
 ## Sistemas Operativos (2021-2022)
 
  * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#posix-threads">POSIX threads</a>
- * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#communication-and-synchronization-among-threads">Communication and synchronization among threads</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#comunicacion-y-sincronizacion-entre-hilos">Comunicación y sincronización entre hilos</a>
  * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/README.md#servidores-concurrentes">Servidores concurrentes</a>
 
