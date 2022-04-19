@@ -44,9 +44,9 @@ void *th_main_1 ( void *arg )
 
 void *th_main_2 ( void *arg )
 {
-    pthread_mutex_lock(&mutex_2) ; // !
+    pthread_mutex_lock(&mutex_2) ; // pthread_mutex_lock(&mutex_1) ; // OK
     sleep(1) ;
-    pthread_mutex_lock(&mutex_1) ; // !
+    pthread_mutex_lock(&mutex_1) ; // pthread_mutex_lock(&mutex_2) ; // OK
 
     printf("Hello from main_2...\n") ;
     sleep(1) ;

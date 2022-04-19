@@ -27,9 +27,9 @@
 #define NUM_THREADS  5
 
 /*
-pthread_mutex_t mutex_1;
-pthread_cond_t  is_cp;
-int             is_copied;
+int             is_copied; // boolean to say "is copied"
+pthread_mutex_t mutex_1;   // protect the is_copied global variable, shared by thread, modified but might be not atomically modified
+pthread_cond_t  cond_cp;   // condition to wait if boolean said we need to wait
 */
 
 void *th_function ( void *arg )
@@ -41,7 +41,7 @@ void *th_function ( void *arg )
     /*
     pthread_mutex_lock(&mutex_1) ;
     is_copied = 1 ;
-    pthread_cond_signal(&is_cp) ;
+    pthread_cond_signal(&cond_cp) ;
     pthread_mutex_unlock(&mutex_1) ;
     */
 
@@ -57,12 +57,16 @@ int main ( int argc, char *argv[] )
     /*
     // Initialize
     pthread_mutex_init(&mutex_1, NULL) ;
-    pthread_cond_init(&is_cp, NULL) ;
+    pthread_cond_init(&cond_cp, NULL) ;
     */
 
     // Create threads...
     for (t=0; t<NUM_THREADS; t++)
     {
+           /*
+           is_copied = 0;
+           */
+
            rc = pthread_create(&(threads[t]), NULL, th_function, (void *)&t) ;
            if (rc)
            {
@@ -72,9 +76,8 @@ int main ( int argc, char *argv[] )
 	   
 	   /*
 	   pthread_mutex_lock(&mutex_1) ;
-           is_copied = 0;
            while (0 == is_copied) {
-                  pthread_cond_wait(&is_cp, &mutex_1) ;
+                  pthread_cond_wait(&cond_cp, &mutex_1) ;
            }
 	   pthread_mutex_unlock(&mutex_1) ;
 	   */
@@ -94,7 +97,7 @@ int main ( int argc, char *argv[] )
     /*
     // Destroy...
     pthread_mutex_destroy(&mutex_1) ;
-    pthread_cond_destroy(&is_cp) ;
+    pthread_cond_destroy(&cond_cp) ;
     */
 
     pthread_exit(NULL) ;
