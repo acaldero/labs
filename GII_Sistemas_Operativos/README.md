@@ -17,6 +17,10 @@
       ./ths_creatjoin
       ```
 
+      **Videos suplementarios**:
+      * <a href="https://www.youtube.com/watch?v=n5qrEotEWfI">Repaso a los conceptos en hilos</a>
+      * <a href="https://www.youtube.com/watch?v=akf9UG7Z5Go">Principales llamadas POSIX de hilos con ejemplos</a>
+   
 2. ### <ins>Comunicación y sincronización entre hilos</ins>
 
    2.1. <ins>¿Qué pasa si (1) dos o más hilos (2) comparten una variable (3) al menos uno modifica la variable (4) y se hace de forma no atómica?</ins>
@@ -33,6 +37,9 @@
       ./race
       ```
 
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=PxjgVYgpGkk&t=471s">Condiciones de carrera</a>  
+   
    2.2. <ins>¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?</ins>
 
       **Ejemplo**: Programar un ejemplo de interbloqueo entre dos hilos.
@@ -47,6 +54,9 @@
       ./interlock
       ```
 
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=PxjgVYgpGkk&t=924s">Condiciones de interbloqueo</a>   
+   
    2.3. <ins>¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?</ins>
 
       **Ejemplo**: Programar un ejemplo de sincronización entre un hilo main y los hilos creados con pthread_create.
@@ -59,7 +69,10 @@
       gcc -Wall -g -o sync_child_mnc sync_child_mnc.c -lpthread
       ./sync_child_mnc
       ```
-
+   
+      **Videos suplementarios**:
+      * <a href="https://www.youtube.com/watch?v=EupaagvNpR0&t=807s">Funcionamiento de los mutex y conditions</a>   
+   
    2.4. <ins>¿Cómo resolver el problema de productor-consumidor usando semáforos?</ins>
 
       **Ejemplo**: Programar un ejemplo de productor-consumidor (buffer acotado) entre dos hilos usando semáforos.
@@ -73,6 +86,10 @@
       ./p-c_sem
       ```
 
+      **Videos suplementarios**:
+      * <a href="https://www.youtube.com/watch?v=EupaagvNpR0&t=235s">Productor-consumidor con semáforos</a>   
+      * <a href="https://www.youtube.com/watch?v=EupaagvNpR0&t=24s">Repaso a cómo funcionan los semáforos</a>      
+
    2.5. <ins>¿Cómo resolver el problema de lectores-escritores usando semáforos?</ins>
 
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando semáforos.
@@ -85,7 +102,7 @@
       gcc -Wall -g -o r-w_sem r-w_sem.c -lpthread
       ./r-w_sem
       ```
-
+  
    2.6. <ins>¿Cómo resolver el problema de productores-consumidores usando mutex y conditions de POSIX?</ins>
 
       **Ejemplo**: Programar un ejemplo de productores-consumidores (bounded buffer) entre dos hilos usando mutex + conditions.
@@ -99,6 +116,10 @@
       ./p-c_mnc
       ```
 
+      **Videos suplementarios**:
+      * <a href="https://www.youtube.com/watch?v=8fdum4cvlvI">Ejemplo simple de productor-consumidor con mutex y conditions de POSIX</a>
+      * <a href="https://www.youtube.com/watch?v=EupaagvNpR0&t=813s">Repaso a cómo funcionan los mutex y conditions de POSIX</a>
+   
    2.7. <ins>¿Cómo resolver el problema de lectores-escritores usando mutex y conditions de POSIX?</ins>
    
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando mutex + conditions.
@@ -131,6 +152,9 @@
       ./1
       ```
 
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=nDyYrpFYG-4&t=0s">Qué es un servidor de peticiones</a>
+   
    3.2. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos pesados?</ins>
 
       **Ejemplo**: Programar una función main que simula un servidor que le llegan peticiones, crea un proceso (fork) y el proceso hijo trata la petición asociada.
@@ -146,6 +170,9 @@
       gcc -Wall -g -o 2 2_fork.c -lpthread peticion.o
       ./2
       ```
+   
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=nDyYrpFYG-4&t=394s">Ejemplo de servidor de peticiones basado en procesos (fork)</a>
 
    3.3. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos?</ins>
 
@@ -163,6 +190,9 @@
       ./3
       ```
 
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=nDyYrpFYG-4&t=551s">Ejemplo de servidor de peticiones basado en hilos</a>
+
    3.4. <ins>¿Cómo sería un servidor de peticiones totalmente paralelo con procesos ligeros o hilos pre-creados?</ins>
 
       **Ejemplo**: Programar una función main que simula un servidor que crea varios hilos que esperan en sus conditions asociadas, le llegan peticiones y para cada una manda una señal a un hilo pre-creado que se encarga de atender a dicha petición y volver a esperar en la condition al terminar.
@@ -179,3 +209,6 @@
       ./4
       ```
 
+      **Video suplementario**:
+      * <a href="https://www.youtube.com/watch?v=nDyYrpFYG-4&t=940s">Ejemplo de servidor de peticiones basado en hilos pre-creados</a>
+   
