@@ -33,8 +33,12 @@
 
       **Compilar y ejecutar**:
       ```
-      gcc -Wall -g -o race race.c -lpthread
-      ./race
+      : código con problema: tres ejecuciones con posibles diferentes resultados
+        gcc -Wall -g -o race     race.c     -lpthread
+        ./race; ./race; ./race
+      : código con solución:
+        gcc -Wall -g -o race_sol race_sol.c -lpthread
+        ./race_sol
       ```
 
       **Video suplementario**:
@@ -50,8 +54,12 @@
 
       **Compilar y ejecutar**:
       ```
-      gcc -Wall -g -o interlock interlock.c -lpthread
-      ./interlock
+      : código con problema (hay que terminar con control-c la ejecución):
+        gcc -Wall -g -o interlock     interlock.c     -lpthread
+        ./interlock
+      : código con solución:
+        gcc -Wall -g -o interlock_sol interlock_sol.c -lpthread
+        ./interlock_sol
       ```
 
       **Video suplementario**:
@@ -61,13 +69,18 @@
 
       **Ejemplo**: Programar un ejemplo de sincronización entre un hilo main y los hilos creados con pthread_create.
  
-      **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
+      **Códigos**:
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/sync_child_mnc_sol.c">sync_child_mnc_sol.c</a>
 
       **Compilar y ejecutar**:
       ```
-      gcc -Wall -g -o sync_child_mnc sync_child_mnc.c -lpthread
-      ./sync_child_mnc
+      : código con problema de no imprimir los identificadores de los hilos bien:
+        gcc -Wall -g -o sync_child_mnc     sync_child_mnc.c     -lpthread
+        ./sync_child_mnc ; ./sync_child_mnc
+      : código con solución:
+        gcc -Wall -g -o sync_child_mnc_sol sync_child_mnc_sol.c -lpthread
+        ./sync_child_mnc_sol
       ```
    
       **Videos suplementarios**:
@@ -78,7 +91,7 @@
       **Ejemplo**: Programar un ejemplo de productor-consumidor (buffer acotado) entre dos hilos usando semáforos.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_sem.c">p-c_sem.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/p-c_sem.c">p-c_sem.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -95,7 +108,7 @@
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando semáforos.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_sem.c">r-w_sem.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/r-w_sem.c">r-w_sem.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -108,7 +121,7 @@
       **Ejemplo**: Programar un ejemplo de productores-consumidores (bounded buffer) entre dos hilos usando mutex + conditions.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -125,7 +138,7 @@
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando mutex + conditions.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Operating_System/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
 
       **Compilar y ejecutar**:
       ```
