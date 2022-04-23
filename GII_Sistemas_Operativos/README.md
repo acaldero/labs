@@ -70,8 +70,8 @@
       **Ejemplo**: Programar un ejemplo de sincronización entre un hilo main y los hilos creados con pthread_create.
  
       **Códigos**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/sync_child_mnc.c">sync_child_mnc.c</a>
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/sync_child_mnc_sol.c">sync_child_mnc_sol.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/sync_child_mnc.c">sync_child_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/sync_child_mnc_sol.c">sync_child_mnc_sol.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -91,7 +91,7 @@
       **Ejemplo**: Programar un ejemplo de productor-consumidor (buffer acotado) entre dos hilos usando semáforos.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/p-c_sem.c">p-c_sem.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/p-c_sem.c">p-c_sem.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -108,7 +108,7 @@
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando semáforos.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/r-w_sem.c">r-w_sem.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/r-w_sem.c">r-w_sem.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -121,7 +121,7 @@
       **Ejemplo**: Programar un ejemplo de productores-consumidores (bounded buffer) entre dos hilos usando mutex + conditions.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/p-c_mnc.c">p-c_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/p-c_mnc.c">p-c_mnc.c</a>
 
       **Compilar y ejecutar**:
       ```
@@ -138,7 +138,7 @@
       **Ejemplo**: Programar un ejemplo de lectores-escritores entre dos hilos usando mutex + conditions.
  
       **Código**:
-      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cns/r-w_mnc.c">r-w_mnc.c</a>
+      * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w10_cys/r-w_mnc.c">r-w_mnc.c</a>
 
       **Compilar y ejecutar**:
       ```
