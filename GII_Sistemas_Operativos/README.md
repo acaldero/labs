@@ -4,9 +4,9 @@
 
 1. ### <ins>POSIX threads</ins>
 
-   1.1. <ins>¿Qué son los hilos (threads)?</ins>
+   1.1. <ins>¿Qué son y cómo se crean los hilos o threads?</ins>
 
-      **Ejemplo**: Programar una función main que crea 5 hilos que imprimen "Hello world from thread <identificador del hilo>!\n" y espera a que todos los hilos terminen.
+      **Ejemplo**: Programar una función main que crea 5 hilos y espera a que todos los hilos terminen. Cada hilo imprime "Hello world from thread &lt;id. del hilo&gt;!\n".
  
       **Código**:
       * <a href="https://github.com/acaldero/labs/blob/main/GII_Sistemas_Operativos/w06_hilos/ths_creatjoin.c">ths_creatjoin.c</a>
