@@ -57,7 +57,7 @@
       **Video suplementario**:
       * <a href="https://www.youtube.com/watch?v=PxjgVYgpGkk&t=924s">Condiciones de interbloqueo</a>   
    
-   2.3. <ins>¿Qué pasa si se solapa el uso de dos o más mutex y no se sigue el mismo orden de petición de bloqueo de los mutex usados?</ins>
+   2.3. <ins>¿Cómo podemos hacer que la ejecución de un hilo se espere hasta que se ejecute un código de otro hilo?</ins>
 
       **Ejemplo**: Programar un ejemplo de sincronización entre un hilo main y los hilos creados con pthread_create.
  
