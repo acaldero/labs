@@ -8,9 +8,9 @@
   <tr><th>:file_folder: Titulación</th><th>:books: Asignatura</th></tr>
   <tr>
       <td rowspan="4"> :white_circle: Grado en Ingeniería Informática</td>
-      <td> :white_medium_square: <a href="https://github.com/acaldero/labs/blob/main/README.md#computer-structure-2022-2023">Computer Structure (2022-2023)</a></td>
+      <td> :white_medium_square: <a href="https://github.com/acaldero/labs/blob/main/README.md#estructura-de-computadores-2022-2023">Computer Structure (2022-2023)</a></td>
   </tr>
-  <tr><td> :white_medium_square: <a href="https://github.com/acaldero/labs/#estructura-de-computadores-2022-2023">Estructura de Computadores (2022-2023)</a></td></tr>
+  <tr><td> :white_medium_square: <a href="https://github.com/acaldero/labs/blob/main/README.md#computer-structure-2022-2023">Estructura de Computadores (2022-2023)</a></td></tr>
   <tr><td> :white_medium_square: <a href="https://github.com/acaldero/labs/blob/main/README.md#sistemas-operativos-2021-2022">Sistemas Operativos (2021-2022)</a></td></tr>
   <tr><td> :white_medium_square: <a href="https://github.com/acaldero/labs/blob/main/README.md#operating-systems-2021-2022">Operating Systems (2021-2022)</a></td></tr>
  </table>
