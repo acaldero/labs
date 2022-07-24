@@ -8,9 +8,9 @@
 
 ## Estructura de computadores (2022-2023)
 
- * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#assembly-i-entry-level">Assembly I: Entry level</a>
- * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#assembly-ii-medium-level">Assembly II: Medium level</a>
- * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#assembly-iii-advanced-level">Assembly III: Advanced level</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#ensamblador-i-nivel-inicial">Ensamblador I: nivel inicial</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#ensamblador-ii-nivel-medio">Ensamblador II: nivel medio</a>
+ * <a href="https://github.com/acaldero/labs/blob/main/GII_Estructura_De_Computadores/README.md#ensamblador-iii-nivel-avanzado">Ensamblador III: nivel avanzado</a>
 
 
 ## Operating Systems (2021-2022)
